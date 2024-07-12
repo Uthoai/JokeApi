@@ -10,6 +10,23 @@ interface JokeApiService {
     @GET("joke/Any")
     suspend fun getRandomJoke(): Response<ResponseJokes>
 
+    @GET("joke/Programming")
+    suspend fun getProgrammingJoke(): Response<ResponseJokes>
+
+    @GET("joke/Miscellaneous")
+    suspend fun getMiscellaneousJoke(): Response<ResponseJokes>
+
+    @GET("joke/Dark")
+    suspend fun getDarkJoke(): Response<ResponseJokes>
+
+    @GET("joke/Pun")
+    suspend fun getPunJoke(): Response<ResponseJokes>
+
+    @GET("joke/Spooky")
+    suspend fun getSpookyJoke(): Response<ResponseJokes>
+
+    @GET("joke/Christmas")
+    suspend fun getChristmasJoke(): Response<ResponseJokes>
 }
 
 object JokesClient{

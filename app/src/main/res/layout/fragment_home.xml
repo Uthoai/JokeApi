@@ -7,11 +7,35 @@
     tools:context=".view.home.HomeFragment">
 
     <TextView
+        android:id="@+id/setup"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/joke"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
         android:id="@+id/joke"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"/>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_Next"

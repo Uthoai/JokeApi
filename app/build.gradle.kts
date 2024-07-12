@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
 }
 
 android {
@@ -71,4 +72,9 @@ dependencies {
     //SDP - a scalable size unit
     implementation(libs.ssp.android)
     implementation(libs.sdp.android)
+
+    //Room DB
+    implementation(libs.room.runtime)
+    kapt(libs.room.compiler.kapt)
+    implementation(libs.room.ktx)
 }
