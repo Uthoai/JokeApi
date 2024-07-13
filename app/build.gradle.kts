@@ -77,4 +77,7 @@ dependencies {
     implementation(libs.room.runtime)
     kapt(libs.room.compiler.kapt)
     implementation(libs.room.ktx)
+
+    //lottie
+    implementation(libs.lottie)
 }

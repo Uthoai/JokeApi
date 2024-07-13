@@ -8,6 +8,9 @@
     <color name="colorTextPrimary">#000000</color>
     <color name="colorGrey">#757575</color>
 
+    <color name="yellow">#FFEB3B</color>
+    <color name="cardBG">#CE7C04</color>
+
     <drawable name="completedTaskBackground">#CCCCCC</drawable>
 
     <drawable name="touchFeedback">#CFD8DC</drawable>

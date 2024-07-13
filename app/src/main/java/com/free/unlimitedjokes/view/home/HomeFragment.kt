@@ -43,10 +43,12 @@ class HomeFragment : Fragment() {
     private fun allObserver() {
         viewModel._responseJokesData.observe(viewLifecycleOwner){data->
             data?.let {
+                binding.tvGenerateJokes.visibility = View.GONE
                 if (data.joke == null){
                     viewModel.jokeSetup.postValue(data.setup ?: "")
                     viewModel.delivery.postValue(data.delivery ?: "")
                 }else{
+                    viewModel.jokeSetup.postValue("")
                     viewModel.delivery.postValue(data.joke)
                 }
                 viewModel.categories.postValue(data.category ?: "")
