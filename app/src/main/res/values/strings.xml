@@ -7,4 +7,5 @@
     <string name="generate_jokes">Generate Jokes</string>
     <string name="generate_new_jokes">Generate New Jokes</string>
     <string name="choose_jokes_category">Choose Jokes Category</string>
+    <string name="favourite_jokes">Favourite Jokes</string>
 </resources>
